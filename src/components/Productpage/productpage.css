@@ -1,0 +1,198 @@
+.productHeader{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    margin-left: 12.5%;
+    position: relative;
+    top: 10vh;
+}
+.productHeader a{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+}
+.productHeader a::after{
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.349);
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.productHeader a:hover::after{
+    transform: scale(1);
+}
+.productHeader::after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 14.5%);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.349);
+    bottom: -30px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 35px;
+}
+.location a::after{
+    display: none;
+}
+.location a{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.708);
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.location svg{
+    margin-left: 10px;
+}
+/* /////////////////////////////////////////////////PRODUCTINFO//////////////////////////////////////////////////////// */
+
+.productinfo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    position: relative;
+    height: 50vh;
+    top: 20vh;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-right: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.73);
+}
+.productImages{
+    display: grid;
+    justify-content: left;
+    align-items: flex-start;
+    position: relative;
+    padding-right: 250px;
+    height: 300px;
+    width: 300px;
+}
+.Image{
+    position: relative;
+    bottom: 30px;
+    height: 300px;
+    width: 500px;
+}
+.productImages .prodoductSlider{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start; 
+    z-index: 10;
+}
+.productImages .prodoductSlider img{
+    cursor: pointer;
+    margin-right: 20px;
+    width: 100px;
+    height: 55px;
+    border-radius: 12px;
+    background-color: rgb(14, 15, 10);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
+}
+.product-informations-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.productmodel{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: #222222;
+    position: relative;
+}
+.ProductBrand{
+    font-size: 45px;
+    font-weight: 800;
+}
+.productmodel .Title{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.Price{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+.productquantity{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 30px;
+}
+.productquantity span{
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    background:#222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.productquantity p{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px;
+}
+.checkoutBtn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.checkoutBtn button{
+    width: max-content;
+    padding: 12px;
+    height: 42px;
+    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+    background-color: #ff6452;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.checkoutBtn button svg{
+    margin-right: 10px;
+}
+.checkoutBtn h3{
+    color: #222222;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.quantityBtn{
+    font-size: 40px;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+p{
+    color: black;
+}

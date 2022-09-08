@@ -1,0 +1,15 @@
+.btn{
+    width: 15%;
+    height: 42px;
+    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+    background-color: #ff6452;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 15px;
+}
