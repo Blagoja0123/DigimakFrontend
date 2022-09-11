@@ -18,7 +18,7 @@ function Homepage() {
   useEffect(() => {
     const saveProducts = async () =>{
       try {
-        const result = await axios.get('http://localhost:3000/product/page/1');
+        const result = await axios.get('https://digimak-backend-q62kyv0oo-blagoja0123.vercel.app/');
         console.log(result)
         sessionStorage.setItem('preloadedItems', JSON.stringify(result.data)); 
       } catch (err) {
