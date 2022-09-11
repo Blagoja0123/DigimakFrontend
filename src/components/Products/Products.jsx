@@ -16,7 +16,7 @@ function Products({category, search, pageNumber}) {
     useEffect(() => {
       const getCategories = async () =>{
         try {
-          const result = await axios.get('http://localhost:3000/categories');
+          const result = await axios.get('https://digimak-backend-q62kyv0oo-blagoja0123.vercel.app//categories');
           setCat(result.data);
         } catch (err) {
           console.log(err)
@@ -55,14 +55,14 @@ function Products({category, search, pageNumber}) {
       const getProducts = async () => {
         try{
           if(id !== 0){
-          const result = await axios.get('http://localhost:3000/products/category/'+id);
+          const result = await axios.get('https://digimak-backend-q62kyv0oo-blagoja0123.vercel.app//products/category/'+id);
           setShopProducts(result.data);
           }
           else if(queryString.length !== 0){
-            const result = await axios.get('http://localhost:3000/products/search/'+queryString);
+            const result = await axios.get('https://digimak-backend-q62kyv0oo-blagoja0123.vercel.app//products/search/'+queryString);
             setShopProducts(result.data);
           }else{
-        const result = await axios.get('http://localhost:3000/product/page/'+pageNumber);
+        const result = await axios.get('https://digimak-backend-q62kyv0oo-blagoja0123.vercel.app//product/page/'+pageNumber);
         setShopProducts(result.data);
           }
         }catch(err){
